@@ -1,0 +1,8 @@
+出于想扩张部件和优化顶层视图，没将主体画在main里面，这个电路的主体是general circuit。
+
+
+memory部件：memoryData文件包含指令和数据，用做测试。只用了一个RAM存这些数据。开始时，memory部件需要加载文件           用于测试电路。
+
+控制器：ROM_microprogramming文件是存的微指令，ROM中没有数据的话，需要将它加载。
+        Dispatch_ROM1 文件 和 Dispatch_ROM2 文件，如果部件Dispatch_ROM1 和 Dispatch_ROM2 没有数据的话，需        要对应加载。
+      
