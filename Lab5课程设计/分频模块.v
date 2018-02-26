@@ -20,7 +20,7 @@ always @(posedge clk_in or negedge rst) begin
 		end
 	else
 		begin
-			if (cnt==22/2-1)
+			if (cnt==50000000)
 				begin
 					clk_out <= ~clk_out;
 					cnt <= 0;
