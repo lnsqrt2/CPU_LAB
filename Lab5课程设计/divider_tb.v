@@ -12,7 +12,13 @@ initial
 
 always
 	begin
-	 	#10 clk_in <=clk_in;
+	 	#10 clk_in <= ~clk_in;
 	end 
+
+always
+	begin
+	 	#500 rst <= 1;
+	end 
+	
 divider z1(clk_in,rst,clk_out);
 endmodule
