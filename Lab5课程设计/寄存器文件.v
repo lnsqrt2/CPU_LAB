@@ -1,5 +1,4 @@
-#include "stdi.v"
-module test()
+module regfile()
 wire;
 reg test[1:0];
 
