@@ -1,4 +1,4 @@
-module divider(clk_in, rst, clk_out)
+module divider(clk_in, rst, clk_out);
 
 input clk_in,rst;//system clock, reset button
 output clk_out;
@@ -13,14 +13,14 @@ initial
 	end
 
 always @(posedge clk_in or negedge rst) begin
-	if (!rst)//reset
+	if (rst)//reset
 		begin
 			cnt <= 0;
 			clk_out <= 0;
 		end
 	else
 		begin
-			if (cnt==50000000)
+			if (cnt==10)//actually 50000000, N/2-1
 				begin
 					clk_out <= ~clk_out;
 					cnt <= 0;
