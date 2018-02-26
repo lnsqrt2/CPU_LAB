@@ -21,21 +21,25 @@ always
 	begin
 	 	#10 clk <= ~clk;
 	end
-
+	
 always
 	begin
 		W <= 32'hffffffff;
-	 	rW <= 1;//WE = 0, cant write
-
-	 	#250 WE <= 1;//25 later write enable
-	 	rW <= 1;
-
-	 	
-	 	#250 W <= 32'h88888888; 
-	 	rW <= 2;
-        
-        #250 rA <= 0; 
+	 	rW <= 1;//WE = 0, can't write
 	end
-
+always
+    begin
+         #250 WE <= 1;//WE = 1, write enable
+    end
+always
+    begin
+         #500 W <= 32'h88888888;
+         rW <= 2;
+    end
+always
+    begin
+         #750 rW <= 0;//try to write reg[0]
+         rA <= 0;
+    end
 regfile z2(clk, WE, rW, rA, rB, W, A, B);
 endmodule
