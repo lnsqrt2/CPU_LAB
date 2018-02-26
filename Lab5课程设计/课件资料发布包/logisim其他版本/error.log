@@ -1,0 +1,18 @@
+Ê®ÔÂ 15, 2017 10:57:20 ÏÂÎç java.util.prefs.WindowsPreferences <init>
+WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+java.lang.NullPointerException
+	at com.cburch.logisim.file.XmlReader.repairForWiringLibrary(XmlReader.java:492)
+	at com.cburch.logisim.file.XmlReader.considerRepairs(XmlReader.java:433)
+	at com.cburch.logisim.file.XmlReader.readLibrary(XmlReader.java:371)
+	at com.cburch.logisim.file.LogisimFile.loadSub(LogisimFile.java:420)
+	at com.cburch.logisim.file.LogisimFile.load(LogisimFile.java:397)
+	at com.cburch.logisim.file.Loader.openLogisimFile(Loader.java:146)
+	at com.cburch.logisim.proj.ProjectActions.doNew(ProjectActions.java:63)
+	at com.cburch.logisim.gui.start.Startup.run(Startup.java:171)
+	at com.cburch.logisim.Main.main(Main.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+	at com.exe4j.runtime.WinLauncher.main(Unknown Source)
