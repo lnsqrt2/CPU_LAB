@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1519741385">
+  <File Type="OPT-DCP" Name="i7_6700k_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="i7_6700k_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="i7_6700k_routed.dcp"/>
+  <File Type="PA-TCL" Name="i7_6700k.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="i7_6700k_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="i7_6700k_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="i7_6700k.hwdef"/>
+  <File Type="PLACE-DCP" Name="i7_6700k_placed.dcp"/>
+  <File Type="PLACE-IO" Name="i7_6700k_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="i7_6700k_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="i7_6700k_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="i7_6700k_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="i7_6700k_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="i7_6700k_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="i7_6700k_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="i7_6700k_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="i7_6700k_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="i7_6700k.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="i7_6700k_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="i7_6700k_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="i7_6700k_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="i7_6700k_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="i7_6700k_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="i7_6700k_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="i7_6700k_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="i7_6700k_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="i7_6700k_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="i7_6700k_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="i7_6700k_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="i7_6700k_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="i7_6700k_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="i7_6700k_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="i7_6700k_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="i7_6700k_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="i7_6700k.bit"/>
+  <File Type="BG-BIN" Name="i7_6700k.bin"/>
+  <File Type="BITSTR-MSK" Name="i7_6700k.msk"/>
+  <File Type="BITSTR-RBT" Name="i7_6700k.rbt"/>
+  <File Type="BITSTR-NKY" Name="i7_6700k.nky"/>
+  <File Type="BITSTR-BMM" Name="i7_6700k_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="i7_6700k.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="i7_6700k.sysdef"/>
+  <File Type="BG-BGN" Name="i7_6700k.bgn"/>
+  <File Type="BG-DRC" Name="i7_6700k.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/extender.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/cpu_choose.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/is.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/change_type.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/regfile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/divider.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/operating_parameter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/ds.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/led.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/pc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/i7_6700k.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="i7_6700k"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../Lab5课程设计/1.单周期FPGA/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

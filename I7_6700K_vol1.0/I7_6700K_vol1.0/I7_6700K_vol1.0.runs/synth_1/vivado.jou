@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Feb 27 22:23:06 2018
+# Process ID: 4948
+# Log file: C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0/I7_6700K_vol1.0.runs/synth_1/i7_6700k.vds
+# Journal file: C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0/I7_6700K_vol1.0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source i7_6700k.tcl -notrace

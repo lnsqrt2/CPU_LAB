@@ -4,7 +4,7 @@ input clk_in,rst;//system clock, reset button
 output clk_out;
 
 reg clk_out;
-reg [31:0] cnt;//counter
+reg [3:0] cnt;//counter
 
 initial
 	begin
@@ -20,7 +20,7 @@ always @(posedge clk_in or negedge rst) begin
 		end
 	else
 		begin
-			if (cnt==2500000)//actually 50000000, N/2-1
+			if (cnt==10)//actually 50000000, N/2-1
 				begin
 					clk_out <= ~clk_out;
 					cnt <= 0;
