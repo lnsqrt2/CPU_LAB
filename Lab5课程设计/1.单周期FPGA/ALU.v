@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module ALU(X,Y,OP,OF,CF,EQ,R,R2);
+module ALU(X,Y,OP,OF,CF,EQ,R,R2);//全功能实现
     input [31:0]X;
     input [31:0]Y;
     input [3:0]OP;
@@ -114,6 +114,7 @@ module ALU(X,Y,OP,OF,CF,EQ,R,R2);
                 OF<=0;
                 R2<=0;
             end
+            
         endcase
     end
 endmodule

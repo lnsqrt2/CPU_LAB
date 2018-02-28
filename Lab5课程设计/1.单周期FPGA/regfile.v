@@ -11,7 +11,7 @@ integer i;
 initial
 	begin
 	   for (i = 0; i < 32; i = i + 1)
-		  register[i] = 32'b0;//register
+		  register[i] = 0;//register
 	end
 
 assign A = register[rA];

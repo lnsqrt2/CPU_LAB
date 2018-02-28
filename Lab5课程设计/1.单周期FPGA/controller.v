@@ -24,10 +24,11 @@ module controller(op,func,Syscall,ALUOP,jr,jal,j,bne,beq,EXTOP,Memwrite,MemToReg
     input [5:0]op;
     input [5:0]func;
     output reg  Syscall;
-    output reg [3:0]ALUOP;
-    output reg jr,jal,j,bne,beq;
-    output reg [1:0]EXTOP;
+    output reg [3:0]ALUOP;//ALU模式控制
+    output reg jr,jal,j,bne,beq;//特殊跳转指令信号
+    output reg [1:0]EXTOP;//立即数扩展控制
     output reg Memwrite,MemToReg,Regwrite,ALUsrc,RegDst;
+    //添加指令及信号，请区分指令类型进行添加
     always @(*)
     begin
         if(op == 6'b000000) begin//13 special instructions
@@ -230,7 +231,7 @@ module controller(op,func,Syscall,ALUOP,jr,jal,j,bne,beq,EXTOP,Memwrite,MemToReg
             endcase
         end
         else begin
-            case(op)//11
+            case(op)//11条普通指令
                 6'b001000:begin//addi
                     Regwrite <= 1;
                     ALUsrc <= 1;
@@ -372,7 +373,7 @@ module controller(op,func,Syscall,ALUOP,jr,jal,j,bne,beq,EXTOP,Memwrite,MemToReg
                 6'b101011:begin//sw
                     ALUsrc <= 1;
                     Memwrite <= 1;
-                    Regwrite <= 1;
+                    Regwrite <= 0;
                     Syscall <= 0;
                     jr <= 0;
                     jal <=0;

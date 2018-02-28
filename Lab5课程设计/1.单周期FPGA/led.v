@@ -29,10 +29,10 @@ input [2:0]pro_reset;   //3¸ö¿ª¹Ø×éºÏÀ´Ñ¡Ôñ¸÷ÖÖ²ÎÊı£º±ÈÈçPCµÄÖµ£¬±ÈÈçÊ±ÖÓÖÜÆÚÊı£
 input [11:0]in_addr;    //µØÖ·ÊäÈë²¦Âë¿ª¹Ø,12Î»µØÖ·Öµ£¬×Ü¹²4KµÄÄÚ´æ
 output [15:0]leds;  //16Î»µÄledµÆµÄÏÔÊ¾
 
-assign leds[0]=reset;  //×Ü¿ª¹ØÖ¸Ê¾µÆ,×îÓÒ±ß
+assign leds[15]=reset;  //ÖØÖÃÖ¸Ê¾µÆ,×î×ó±ß
 
-assign leds[3:1]=pro_reset;   //ÏÔÊ¾¸÷ÖÖ²ÎÊıµÄµÄledµÆ
+assign leds[2:0]=pro_reset;   //ÏÔÊ¾¸÷ÖÖ²ÎÊıµÄµÄledµÆ
 
-assign leds[15:4]=in_addr;  //ÏÔÊ¾µØÖ·ÖµµÄledµÆ
+assign leds[14:3]=in_addr;  //ÏÔÊ¾µØÖ·ÖµµÄledµÆ
 
 endmodule

@@ -8,7 +8,7 @@
 
 #set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets SW_IBUF[15]];
 
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets leds_OBUF[0]];
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets leds_OBUF[15]];
 
 
 ## Clock signal
@@ -34,7 +34,7 @@ set_property -dict { PACKAGE_PIN T13   IOSTANDARD LVCMOS33 } [get_ports { in_add
 set_property -dict { PACKAGE_PIN H6    IOSTANDARD LVCMOS33 } [get_ports { in_addr[9] }]; #IO_L24P_T3_35 Sch=sw[12]
 set_property -dict { PACKAGE_PIN U12   IOSTANDARD LVCMOS33 } [get_ports { in_addr[10] }]; #IO_L20P_T3_A08_D24_14 Sch=sw[13]
 set_property -dict { PACKAGE_PIN U11   IOSTANDARD LVCMOS33 } [get_ports { in_addr[11] }]; #IO_L19N_T3_A09_D25_VREF_14 Sch=sw[14]
-#set_property -dict { PACKAGE_PIN V10   IOSTANDARD LVCMOS33 } [get_ports { in_addr[12] }]; #IO_L21P_T3_DQS_14 Sch=sw[15]
+set_property -dict { PACKAGE_PIN V10   IOSTANDARD LVCMOS33 } [get_ports { choose }]; #IO_L21P_T3_DQS_14 Sch=sw[15]
 
 
 ## LEDs

@@ -5,7 +5,7 @@ module IS(address, data_out);
 	output	[DWIDTH-1:0] data_out;	//Êý¾Ý£ºÊä³ö
     reg [DWIDTH-1:0] rom [2**AWIDTH-1:0];	//´æ´¢Æ÷
     initial begin
-        $readmemh("E:/benchmark.dat", rom);
+        $readmemh("D:/benchmark.dat", rom);
     end
     assign data_out = rom[address];
 endmodule
