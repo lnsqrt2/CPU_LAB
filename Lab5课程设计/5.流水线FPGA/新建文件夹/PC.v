@@ -8,8 +8,8 @@ module PC(clk,pause,rst,pc_in,pc_out);
         pc_out=0;
     end
     always @(posedge clk) begin
-        if(rst)pc_out=0;
-        else if(pause)pc_out=pc_out;
+        if(rst)pc_out<=0;
+        else if(pause)pc_out<=pc_out;
         else begin 
             pc_out<=pc_in;
         end

@@ -6,17 +6,18 @@ module IF_ID(clk,rst,pause,p_in,p_out,i_in,i_out);
     output reg [31:0] p_out,i_out;
 
     initial begin
-        pc_out=0;
+        p_out=0;
+        i_out=0;
     end
 
     always @(posedge clk) begin
         if(rst)	begin
-        	p_out=0;
-        	i_out=0;
+        	p_out<=0;
+        	i_out<=0;
         end	
         else if(pause) begin
-        	p_out=p_out;
-        	i_out=i_out;
+        	p_out<=p_out;
+        	i_out<=i_out;
         end
         else begin
             p_out<=p_in;
