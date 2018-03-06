@@ -12,7 +12,7 @@ module HALT(RF_A,syscall,rst,halt);
         if (rst) begin
             halt<=0;
         end
-        else if((RF_A==32'ha)&&Syscall) begin
+        else if((RF_A==32'ha)&&syscall) begin
             halt <= ~halt;
         end
     end

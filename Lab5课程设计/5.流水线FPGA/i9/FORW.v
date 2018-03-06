@@ -1,4 +1,4 @@
-module FOR(Rd,RA,RB,RW,WE,WB,ALUSrc,op,func,A_MEM,A_WB,B_MEM,B_WB);
+module FORW(Rd,RA,RB,RW,WE,WB,ALUSrc,op,func,A_MEM,A_WB,B_MEM,B_WB);
     input [4:0]Rd,RA,RB,RW;
     input [5:0] op,func;
     input WE,WB,ALUSrc;

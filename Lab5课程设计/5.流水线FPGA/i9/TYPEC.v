@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module TYPE(clk,SyscallOut,Mdata,PC,all_time,j_change,b_change,b_change_success,lu_times,pro_reset,in_addr,chose_out,RAM_addr);
+module TYPEC(clk,SyscallOut,Mdata,PC,all_time,j_change,b_change,b_change_success,lu_times,pro_reset,in_addr,chose_out,RAM_addr);
 input clk;
 input [31:0]SyscallOut; //
 input [31:0]Mdata;
@@ -8,7 +8,7 @@ input [31:0]all_time;  //16位周期数
 input [31:0]j_change;  //无条件分支指令数
 input [31:0]b_change;  //有条件分支指令数
 input [31:0]b_change_success ;  //有条件分支转移成功数
-input [31:0]lu_times
+input [31:0]lu_times;
 input [2:0]pro_reset;   //3个开关组合来选择各种参数
 input [11:0]in_addr;   //12位地址选择开关
 

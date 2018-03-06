@@ -1,14 +1,14 @@
 `timescale 1ns / 1ps
 
 module MUX(p_in,NPC_out,j_bub,pc_in,
-    25_21,20_16,EXTOP,//输出ra2
+    i_25_21,i_20_16,EXTOP,//输出ra2
     syscall1,ra1,//输入ra2，02
-    rb1,//输入20_16,04；控制syscall1
-    15_11,RegDst,rw2,//输入20_16
+    rb1,//输入i_20_16,04；控制syscall1
+    i_15_11,RegDst,//输入i_20_16
     jal1,rw1,//输入rw2,1f
-    A,w_MEM,A_MEM,A_f1,
+    A,w_MEM,A_MEM,
     w_RB,A_WB,A_f,
-    B,B_MEM,B_f1,
+    B,B_MEM,
     B_WB,B_f,
     ext_out,ALUsrc,Y,
     p_in2,jal2,R2,
@@ -16,10 +16,10 @@ module MUX(p_in,NPC_out,j_bub,pc_in,
     R3,data3,MemToReg_WB,//w3
     jal,p_in3);
 
-    input j_bub,syscall1,RegDst,jal,jal1,jal2,A_MEM,A_WB,B_MEM,B_WB,ALUsrc,sh2;
+    input j_bub,syscall1,RegDst,jal,jal1,jal2,A_MEM,A_WB,B_MEM,B_WB,ALUsrc,sh2,MemToReg_WB;
     input [1:0] EXTOP;
-    input [4:0] 25_21,20_16,15_11;
-    input [31:0] p_in,p_in2,p_in3,NPC_out,A,B,B2,ext_out,R2;
+    input [4:0] i_25_21,i_20_16,i_15_11;
+    input [31:0] p_in,p_in2,p_in3,NPC_out,A,B,B2,ext_out,R2,R3,data3;
     output reg [4:0] ra1,rb1,rw1;
     output reg [31:0] pc_in,A_f,B_f,Y,w_MEM,data_in,w_RB;
     reg [4:0] ra2,rw2;
@@ -50,9 +50,9 @@ module MUX(p_in,NPC_out,j_bub,pc_in,
         endcase
 
         if (EXTOP==2'b10)
-            ra2<=20_16;
+            ra2<=i_20_16;
         else
-            ra2<=25_21;
+            ra2<=i_25_21;
 
         case(syscall1)
             1'b0:ra1<=ra2;
@@ -60,13 +60,13 @@ module MUX(p_in,NPC_out,j_bub,pc_in,
         endcase
 
         case(syscall1)
-            1'b0:rb1<=20_16;
+            1'b0:rb1<=i_20_16;
             1'b1:rb1<=5'h04;
         endcase
 
         case(RegDst)
-            1'b0:rw2<=20_16;
-            1'b1:rw2<=15_11;
+            1'b0:rw2<=i_20_16;
+            1'b1:rw2<=i_15_11;
         endcase
 
         case(jal1)

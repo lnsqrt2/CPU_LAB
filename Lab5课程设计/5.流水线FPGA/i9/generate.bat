@@ -1,0 +1,1 @@
+iverilog -o i9test .\i9_test.v .\i9_7980XE.v .\ALU.v .\CACU.v .\CONT.v .\DEC.v .\DISP.v .\DIV.v .\DS.v .\EX_MEM.v .\EXT.v .\FORW.v .\HALT.v .\ID_EX.v .\IF_ID.v .\IS.v .\JBUB.v .\LED.v .\LOAD.v .\MEM_WB.v .\MUX.v .\NPC.v .\PC.v .\REGF.v .\SHOW.v .\TYPEC.v
