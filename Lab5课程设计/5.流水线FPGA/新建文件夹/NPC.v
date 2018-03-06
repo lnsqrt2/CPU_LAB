@@ -1,14 +1,14 @@
-module NPC(j,jal,jr,beq,bne,blez,equ,RF_A,pc1,ext,index,correct_b,NPC,jmp);
+module NPC_out(j,jal,jr,beq,bne,blez,equ,RF_A,pc1,ext,index,correct_b,NPC_out,jmp);
     input [31:0]RF_A,pc1,ext,index;
     input j,jal,jr,beq,bne,blez,equ;
     output reg jmp,correct_b;
-    output reg [31:0] NPC;
+    output reg [31:0] NPC_out;
     reg [31:0] NPC_b,NPC_j;
 
     initial begin
         jmp=0;
         correct_b=0;
-        NPC=0;
+        NPC_out=0;
         NPC_b=0;
         NPC_j=0;
     end
@@ -38,10 +38,10 @@ module NPC(j,jal,jr,beq,bne,blez,equ,RF_A,pc1,ext,index,correct_b,NPC,jmp);
         end
 
         if (jr) begin
-            NPC<=RF_A;
+            NPC_out<=RF_A;
         end
         else begin
-            NPC<=NPC_j;
+            NPC_out<=NPC_j;
         end
 
     end

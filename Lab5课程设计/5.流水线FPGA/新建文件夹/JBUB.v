@@ -1,6 +1,4 @@
-module DISP(clk,rst,syscall,RF_A,RF_B,syscallout);
-    input [31:0]RF_A;
-    input [31:0]RF_B;
+module JBUB(clk,rst,jmp,correct_b,j_bub);
     input syscall;
     input rst;
     input clk;
@@ -14,22 +12,22 @@ module DISP(clk,rst,syscall,RF_A,RF_B,syscallout);
 
     always @(posedge clk)
     begin
-    	out2<=out1;
+        out2<=out1;
     end
     
     always @(*) begin
         if (rst) begin
             out1 <= 0;
             out2 <= 0;
-            syscallout<=0;
+            j_bub<=0;
         end
-		else if((!(RF_A==32'ha))&&Syscall) begin
-            out1 <= RF_B;
-			syscallout<=RF_B;
-		end
-		else begin
-            out1<=out2;
-			syscallout<=out2;
-		end
+        else if(!(jmp||correct_b)) begin
+            out1<=0;
+            j_bub<=0;
+        end
+        else begin
+            out1 <= (!out2);
+            j_bub <= (!out2);
+        end
     end
 endmodule
