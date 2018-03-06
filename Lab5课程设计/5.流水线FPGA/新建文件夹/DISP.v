@@ -19,10 +19,10 @@ module DISP(clk,rst,syscall,RF_A,RF_B,syscallout);
     
     always @(*) begin
 		if((!(RF_A==32'ha))&&Syscall) begin
-			SyscallOut<=RF_B;
+			syscallout<=RF_B;
 		end
 		else begin
-			SyscallOut<=out2;
+			syscallout<=out2;
 		end
     end
 endmodule
