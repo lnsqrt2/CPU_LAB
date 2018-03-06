@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module EXT(15_0,10_6,ext_out,EXTOP)
+module EXT(15_0,10_6,ext_out,EXTOP);
     input [15:0] 15_0;
     input [4:0] 10_6;
     input [1:0] EXTOP;

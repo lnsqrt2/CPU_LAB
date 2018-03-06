@@ -13,7 +13,7 @@ module MUX(p_in,NPC_out,j_bub,pc_in,
     ext_out,ALUsrc,Y,
     p_in2,jal2,R2,
     B2,sh2,data_in,
-    R3,data3,MemToReg_WB//w3
+    R3,data3,MemToReg_WB,//w3
     jal,p_in3);
 
     input j_bub,syscall1,RegDst,jal,jal1,jal2,A_MEM,A_WB,B_MEM,B_WB,ALUsrc,sh2;

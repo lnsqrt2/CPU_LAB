@@ -9,6 +9,93 @@ module i9_7980XE(clk_in,RST,pro_reset,in_addr,choose,leds,SEG,AN
 	output [7:0]SEG;
     output [7:0]AN;
 
+	//DIV
+    wire clk_in;//system clock, reset button
+	wire clk_out;
+
+	//PC
+	wire pause;
+	wire [31:0] pc_in;
+	wire [31:0] pc_out;
+
+	//IS
+	wire [9:0] address;
+	wire [31:0] data_out;
+
+	//IF_ID
+	wire [31:0] p_in;
+	wire [31:0] p_out;
+	//i_in=data_out
+	wire [31:0] i_out;
+
+	//DEC
+	wire [5:0]op1;
+	wire [4:0]25_21;
+	wire [4:0]20_16;
+	wire [4:0]15_11;
+	wire [4:0]10_6;
+	wire [5:0]func1;
+	wire [15:0] 15_0;
+	wire [31:0] index1;
+
+	//CONT
+	wire [3:0]ALUOP1;
+	wire [1:0]EXTOP;
+	wire jr1,jal1,j1,bne1,beq1,blez1,sh1,Syscall1;
+	wire Memwrite1,MemToReg1,Regwrite1,ALUsrc1,RegDst1;
+
+	//EXT
+	wire [31:0] ext_out1;
+
+	//REGF
+	wire WB;
+	wire [4:0]RW,ra1,rb1;
+	wire [31:0] w_RB,A1,B1;
+
+	//ID_EX
+	wire unlock;
+	;
+
+	assign unlock = (~LOCK);
+	assign pause = (~LOCK) & (~loaduse);
+	assign p_in = pc_out+1;
+
+    DIV m_DIV(clk_in,choose,clk_out);
+    PC m_PC(clk_out,pause,RST,pc_in,pc_out);
+    IS m_IS(address, data_out);
+    IF_ID m_IFID(clk_out,RST,pause,p_in,p_out,data_out,i_out);
+    DEC m_DEC(i_out,op1,25_21,20_16,15_11,10_6,func1,15_0,index1);
+    CONT m_CONT(op1,func1,Syscall1,ALUOP1,jr1,jal1,j1,bne1,beq1,blez1,EXTOP,Memwrite1,MemToReg1,Regwrite1,ALUsrc1,RegDst1,sh1);
+    EXT m_EXT(15_0,10_6,ext_out1,EXTOP);
+    REGF m_REGF(clk_out, WB, RW, ra1, rb1, w_RB, A1, B1);
+    ID_EX m_IDEX(clk_out,RST,unlock,p_out,p_out1,
+    ALUsrc1,ALUsrc,MemToReg_in,MemToReg_out,
+    MemWrite_in,MemWrite_out,blez_in,blez_out,beq_in,beq_out,
+    bne_in,bne_out,j_in,j_out,jal_in,jal_out,jr_in,jr_out,
+    syscall_in,syscall_out,ALUOP_in,ALUOP_out,sh_in,sh_out,
+    Regwrite1,WE_EX,A_in,A_out,B_in,B_out,EXT_in,EXT_out,
+    INDEX_in,INDEX_out,RW_in,RW_out,RA_in,RA_out,RB_in,RB_out,
+    op_in,op_out,func_in,func_out);
+
+
+	MUX m_MUX(p_in,NPC_out,j_bub,pc_in,
+    25_21,20_16,EXTOP,
+    Syscall1,ra1,
+    rb1,
+    15_11,RegDst,rw2,
+    jal1,rw1,
+    A,w_MEM,A_MEM,A_f1,
+    w_RB,A_WB,A_f,
+    B,B_MEM,B_f1,
+    B_WB,B_f,
+    ext_out,ALUsrc,Y,
+    p_in2,jal2,R2,
+    B2,sh2,data_in,
+    R3,data3,MemToReg_WB,
+    jal,p_in3);
+
+
+
 	//controller
 	wire [5:0]op;
 	wire [5:0]func;//in
