@@ -186,7 +186,7 @@ module i9_7980XE(clk_in,RST,pro_reset,in_addr,choose,leds,SEG,AN
     i_25_21,i_20_16,EXTOP,
     Syscall1,ra1,
     rb1,
-    i_15_11,RegDst,
+    i_15_11,RegDst1,
     jal1,rw1,
     A,w_MEM,A_MEM,
     w_RB,A_WB,A_f,
