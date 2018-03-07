@@ -1,0 +1,1873 @@
+
+*** Running vivado
+    with args -log i9_7980XE.vds -m64 -mode batch -messageDb vivado.pb -notrace -source i9_7980XE.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source i9_7980XE.tcl -notrace
+Command: synth_design -top i9_7980XE -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 265.008 ; gain = 93.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'i9_7980XE' [C:/Users/Administrator/Desktop/i9/i9_7980XE.v:1]
+INFO: [Synth 8-638] synthesizing module 'DIV' [C:/Users/Administrator/Desktop/i9/DIV.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DIV' (1#1) [C:/Users/Administrator/Desktop/i9/DIV.v:1]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/Administrator/Desktop/i9/PC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [C:/Users/Administrator/Desktop/i9/PC.v:1]
+INFO: [Synth 8-638] synthesizing module 'IS' [C:/Users/Administrator/Desktop/i9/IS.v:1]
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'D:/benchmark.hex' is read successfully [C:/Users/Administrator/Desktop/i9/IS.v:8]
+INFO: [Synth 8-256] done synthesizing module 'IS' (3#1) [C:/Users/Administrator/Desktop/i9/IS.v:1]
+INFO: [Synth 8-638] synthesizing module 'IF_ID' [C:/Users/Administrator/Desktop/i9/IF_ID.v:1]
+INFO: [Synth 8-256] done synthesizing module 'IF_ID' (4#1) [C:/Users/Administrator/Desktop/i9/IF_ID.v:1]
+INFO: [Synth 8-638] synthesizing module 'DEC' [C:/Users/Administrator/Desktop/i9/DEC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DEC' (5#1) [C:/Users/Administrator/Desktop/i9/DEC.v:1]
+INFO: [Synth 8-638] synthesizing module 'CONT' [C:/Users/Administrator/Desktop/i9/CONT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/i9/CONT.v:15]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/i9/CONT.v:240]
+INFO: [Synth 8-256] done synthesizing module 'CONT' (6#1) [C:/Users/Administrator/Desktop/i9/CONT.v:3]
+INFO: [Synth 8-638] synthesizing module 'EXT' [C:/Users/Administrator/Desktop/i9/EXT.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/i9/EXT.v:12]
+INFO: [Synth 8-256] done synthesizing module 'EXT' (7#1) [C:/Users/Administrator/Desktop/i9/EXT.v:3]
+INFO: [Synth 8-638] synthesizing module 'REGF' [C:/Users/Administrator/Desktop/i9/REGF.v:1]
+INFO: [Synth 8-256] done synthesizing module 'REGF' (8#1) [C:/Users/Administrator/Desktop/i9/REGF.v:1]
+INFO: [Synth 8-638] synthesizing module 'ID_EX' [C:/Users/Administrator/Desktop/i9/ID_EX.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX' (9#1) [C:/Users/Administrator/Desktop/i9/ID_EX.v:1]
+INFO: [Synth 8-638] synthesizing module 'DISP' [C:/Users/Administrator/Desktop/i9/DISP.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DISP' (10#1) [C:/Users/Administrator/Desktop/i9/DISP.v:1]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Administrator/Desktop/i9/ALU.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administrator/Desktop/i9/ALU.v:16]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (11#1) [C:/Users/Administrator/Desktop/i9/ALU.v:2]
+INFO: [Synth 8-638] synthesizing module 'NPC' [C:/Users/Administrator/Desktop/i9/NPC.v:1]
+INFO: [Synth 8-256] done synthesizing module 'NPC' (12#1) [C:/Users/Administrator/Desktop/i9/NPC.v:1]
+INFO: [Synth 8-638] synthesizing module 'JBUB' [C:/Users/Administrator/Desktop/i9/JBUB.v:1]
+INFO: [Synth 8-256] done synthesizing module 'JBUB' (13#1) [C:/Users/Administrator/Desktop/i9/JBUB.v:1]
+INFO: [Synth 8-638] synthesizing module 'HALT' [C:/Users/Administrator/Desktop/i9/HALT.v:1]
+INFO: [Synth 8-256] done synthesizing module 'HALT' (14#1) [C:/Users/Administrator/Desktop/i9/HALT.v:1]
+INFO: [Synth 8-638] synthesizing module 'EX_MEM' [C:/Users/Administrator/Desktop/i9/EX_MEM.v:1]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (15#1) [C:/Users/Administrator/Desktop/i9/EX_MEM.v:1]
+INFO: [Synth 8-638] synthesizing module 'DS' [C:/Users/Administrator/Desktop/i9/DS.v:1]
+	Parameter AWIDTH bound to: 12 - type: integer 
+	Parameter DWIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DS_8b' [C:/Users/Administrator/Desktop/i9/DS.v:37]
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter DWIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DS_8b' (16#1) [C:/Users/Administrator/Desktop/i9/DS.v:37]
+INFO: [Synth 8-256] done synthesizing module 'DS' (17#1) [C:/Users/Administrator/Desktop/i9/DS.v:1]
+INFO: [Synth 8-638] synthesizing module 'MEM_WB' [C:/Users/Administrator/Desktop/i9/MEM_WB.v:1]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (18#1) [C:/Users/Administrator/Desktop/i9/MEM_WB.v:1]
+INFO: [Synth 8-638] synthesizing module 'FORW' [C:/Users/Administrator/Desktop/i9/FORW.v:1]
+INFO: [Synth 8-256] done synthesizing module 'FORW' (19#1) [C:/Users/Administrator/Desktop/i9/FORW.v:1]
+INFO: [Synth 8-638] synthesizing module 'LOAD' [C:/Users/Administrator/Desktop/i9/LOAD.v:1]
+INFO: [Synth 8-256] done synthesizing module 'LOAD' (20#1) [C:/Users/Administrator/Desktop/i9/LOAD.v:1]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/Administrator/Desktop/i9/MUX.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (21#1) [C:/Users/Administrator/Desktop/i9/MUX.v:3]
+INFO: [Synth 8-638] synthesizing module 'CACU' [C:/Users/Administrator/Desktop/i9/CACU.v:1]
+INFO: [Synth 8-256] done synthesizing module 'CACU' (22#1) [C:/Users/Administrator/Desktop/i9/CACU.v:1]
+INFO: [Synth 8-638] synthesizing module 'LED' [C:/Users/Administrator/Desktop/i9/LED.v:2]
+INFO: [Synth 8-256] done synthesizing module 'LED' (23#1) [C:/Users/Administrator/Desktop/i9/LED.v:2]
+INFO: [Synth 8-638] synthesizing module 'TYPEC' [C:/Users/Administrator/Desktop/i9/TYPEC.v:2]
+INFO: [Synth 8-256] done synthesizing module 'TYPEC' (24#1) [C:/Users/Administrator/Desktop/i9/TYPEC.v:2]
+INFO: [Synth 8-638] synthesizing module 'SHOW' [C:/Users/Administrator/Desktop/i9/SHOW.v:3]
+	Parameter times bound to: 40000 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'data_to_show' should be on the sensitivity list [C:/Users/Administrator/Desktop/i9/SHOW.v:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Desktop/i9/SHOW.v:78]
+INFO: [Synth 8-256] done synthesizing module 'SHOW' (25#1) [C:/Users/Administrator/Desktop/i9/SHOW.v:3]
+WARNING: [Synth 8-3848] Net reset in module/entity i9_7980XE does not have driver. [C:/Users/Administrator/Desktop/i9/i9_7980XE.v:203]
+INFO: [Synth 8-256] done synthesizing module 'i9_7980XE' (26#1) [C:/Users/Administrator/Desktop/i9/i9_7980XE.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 398.184 ; gain = 226.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin m_LED:reset to constant 0 [C:/Users/Administrator/Desktop/i9/i9_7980XE.v:203]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 398.184 ; gain = 226.176
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'leds_OBUF[15]'. [C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pause_IBUF'. [C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 801.973 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 17 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 22 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 22 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 23 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 23 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 24 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 24 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 25 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 25 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 26 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 26 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 27 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 27 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 28 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 28 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 29 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 29 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 30 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 30 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 31 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 31 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 32 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 32 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 33 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 33 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 34 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 34 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 35 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 35 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 36 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 36 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 37 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 37 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 42 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 42 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 43 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 43 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 44 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 44 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 45 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 45 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 46 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 46 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 47 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 47 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 48 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 48 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 49 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 49 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 50 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 50 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 51 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 51 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 52 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 52 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 53 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 53 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 54 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 54 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 55 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 55 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 56 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 56 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 57 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 57 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 69 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 69 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 70 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 71 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 72 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 73 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 74 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 75 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 75 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 77 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 77 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 79 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 79 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 80 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 80 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 81 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 81 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 82 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 82 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 83 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 83 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 84 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 84 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 85 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 85 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 86 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 86 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 92 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 92 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rom" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'Syscall_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOP_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'jr_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'j_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'bne_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'beq_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'blez_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'EXTOP_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:28]
+WARNING: [Synth 8-327] inferring latch for variable 'Memwrite_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'MemToReg_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:23]
+WARNING: [Synth 8-327] inferring latch for variable 'Regwrite_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUsrc_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:24]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'sh_reg' [C:/Users/Administrator/Desktop/i9/CONT.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'ext_out_reg' [C:/Users/Administrator/Desktop/i9/EXT.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [C:/Users/Administrator/Desktop/i9/ALU.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [C:/Users/Administrator/Desktop/i9/ALU.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'R_reg' [C:/Users/Administrator/Desktop/i9/ALU.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'R2_reg' [C:/Users/Administrator/Desktop/i9/ALU.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'halt_reg' [C:/Users/Administrator/Desktop/i9/HALT.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |DS_8b__GBM0    |           1|     29556|
+|2     |DS_8b__GBM1    |           1|      7727|
+|3     |DS_8b__GBM2    |           1|      9586|
+|4     |DS_8b__GBM3    |           1|     12051|
+|5     |DS_8b__GBM4    |           1|     15312|
+|6     |DS_8b__GBM5    |           1|     19162|
+|7     |DS_8b__GBM6    |           1|     25079|
+|8     |DS_8b__GBM7    |           1|     32041|
+|9     |DS__GC0        |           1|       267|
+|10    |i9_7980XE__GC0 |           1|     15910|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 4     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 22    
+	                8 Bit    Registers := 4096  
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 25    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	 220 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4097  
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	  14 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4101  
+	  14 Input      1 Bit        Muxes := 9     
+	  15 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module i9_7980XE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module DS_8b 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1024  
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1024  
+	   2 Input      1 Bit        Muxes := 1024  
+Module DS 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      1 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+Module DIV 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module IS 
+Detailed RTL Component Info : 
++---Muxes : 
+	 220 Input     32 Bit        Muxes := 1     
+Module IF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module CONT 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 6     
+	  15 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 1     
+Module EXT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 1     
+Module REGF 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module ID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
+Module DISP 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 3     
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module JBUB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module EX_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module MEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      5 Bit        Muxes := 5     
+Module CACU 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module TYPEC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module SHOW 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:49 ; elapsed = 00:00:58 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP R0, operation Mode is: A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: Generating DSP R0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: Generating DSP R0, operation Mode is: A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: Generating DSP R0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator R0 is absorbed into DSP R0.
+DSP Report: operator R0 is absorbed into DSP R0.
+WARNING: [Synth 8-3331] design i9_7980XE__GC0 has unconnected port leds[15]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:01:30 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:53 ; elapsed = 00:01:30 . Memory (MB): peak = 801.973 ; gain = 629.965
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |DS_8b__GBM0    |           4|     30516|
+|2     |DS_8b__GBM1    |           4|      8295|
+|3     |DS_8b__GBM2    |           4|     10290|
+|4     |DS_8b__GBM3    |           4|     12939|
+|5     |DS_8b__GBM4    |           4|     16200|
+|6     |DS_8b__GBM5    |           4|     20546|
+|7     |DS_8b__GBM6    |           4|     26815|
+|8     |DS_8b__GBM7    |           4|     33105|
+|9     |DS__GC0        |           1|       299|
+|10    |i9_7980XE__GC0 |           1|     16500|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++---------------+---------------------+-----------+----------------------+---------------+-------------------+
+|Module Name    | RTL Object          | Inference | Size (Depth x Width) | Primitives    | Hierarchical Name | 
++---------------+---------------------+-----------+----------------------+---------------+-------------------+
+|i9_7980XE__GC0 | m_REGF/register_reg | Implied   | 32 x 32              | RAM32M x 12   | ram__1            | 
++---------------+---------------------+-----------+----------------------+---------------+-------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | No           | 18     | 15     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 15     | 15     | 30     | 25     | 30     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 18     | 15     | 31     | 25     | 47     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (OF_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (CF_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[31] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[30] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[29] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[28] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[27] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[26] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[25] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[24] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[23] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[22] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[21] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[20] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[19] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[18] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[17] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[16] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[15] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[14] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[13] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[12] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[11] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[10] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[9] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[8] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[7] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[6] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[5] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[4] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[3] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[2] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[1] ) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (\R2_reg[0] ) is unused and will be removed from module ALU.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_IFID/i_out_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_JBUB/out2_reg[11] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:02:03 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:58 ; elapsed = 00:02:03 . Memory (MB): peak = 801.973 ; gain = 629.965
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |DS_8b__GBM0    |           4|     18868|
+|2     |DS_8b__GBM1    |           4|      1287|
+|3     |DS_8b__GBM2    |           4|      1788|
+|4     |DS_8b__GBM3    |           4|      1952|
+|5     |DS_8b__GBM4    |           4|      2336|
+|6     |DS_8b__GBM5    |           4|      2990|
+|7     |DS_8b__GBM6    |           4|      3823|
+|8     |DS_8b__GBM7    |           4|      3888|
+|9     |i9_7980XE__GC0 |           1|      7307|
++------+---------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:58 ; elapsed = 00:02:03 . Memory (MB): peak = 801.973 ; gain = 629.965
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 17 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 22 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 22 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 23 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 23 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 24 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 24 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 25 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 25 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 26 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 26 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 27 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 27 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 28 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 28 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 29 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 29 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 30 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 30 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 31 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 31 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 32 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 32 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 33 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 33 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 34 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 34 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 35 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 35 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 36 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 36 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 37 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 37 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 42 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 42 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 43 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 43 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 44 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 44 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 45 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 45 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 46 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 46 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 47 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 47 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 48 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 48 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 49 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 49 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 50 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 50 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 51 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 51 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 52 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 52 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 53 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 53 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 54 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 54 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 55 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 55 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 56 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 56 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 57 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 57 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 69 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 69 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 70 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 71 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 72 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 73 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 74 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 75 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 75 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 77 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 77 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 79 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 79 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 80 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 80 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 81 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 81 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 82 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 82 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 83 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 83 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 84 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 84 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 85 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 85 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 86 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 86 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 92 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+incorrect set of required parameters for "set_property" at line 92 of file C:/Users/Administrator/Desktop/i9/Nexys4DDR_Master.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:02:16 . Memory (MB): peak = 869.930 ; gain = 697.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:02:17 . Memory (MB): peak = 873.867 ; gain = 701.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |DS_8b__GBM0    |           4|     18868|
+|2     |DS_8b__GBM1    |           4|      1287|
+|3     |DS_8b__GBM2    |           4|      1788|
+|4     |DS_8b__GBM3    |           4|      1952|
+|5     |DS_8b__GBM4    |           4|      2336|
+|6     |DS_8b__GBM5    |           4|      2990|
+|7     |DS_8b__GBM6    |           4|      3823|
+|8     |DS_8b__GBM7    |           4|      3888|
+|9     |i9_7980XE__GC0 |           1|      7307|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:37 ; elapsed = 00:02:43 . Memory (MB): peak = 991.027 ; gain = 819.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:02:49 . Memory (MB): peak = 991.027 ; gain = 819.020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:44 ; elapsed = 00:02:50 . Memory (MB): peak = 991.027 ; gain = 819.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:02:55 . Memory (MB): peak = 991.027 ; gain = 819.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:02:55 . Memory (MB): peak = 991.027 ; gain = 819.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:02:57 . Memory (MB): peak = 991.027 ; gain = 819.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     3|
+|2     |CARRY4  |   335|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    76|
+|5     |LUT2    |   233|
+|6     |LUT3    |  2037|
+|7     |LUT4    |   610|
+|8     |LUT5    |  3799|
+|9     |LUT6    | 24418|
+|10    |MUXCY_L |   217|
+|11    |MUXF7   |  8666|
+|12    |MUXF8   |  4185|
+|13    |RAM32M  |    12|
+|14    |XORCY   |   224|
+|15    |FDRE    | 33674|
+|16    |LD      |    68|
+|17    |LDC     |     1|
+|18    |IBUF    |    18|
+|19    |OBUF    |    31|
+|20    |OBUFT   |     1|
++------+--------+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        | 78611|
+|2     |  m_DS    |DS      | 63128|
+|3     |    DS_0  |DS_8b   | 15782|
+|4     |    DS_1  |DS_8b_0 | 15782|
+|5     |    DS_2  |DS_8b_1 | 15782|
+|6     |    DS_3  |DS_8b_2 | 15782|
+|7     |  m_ALU   |ALU     |    55|
+|8     |  m_CACU  |CACU    |   607|
+|9     |  m_CONT  |CONT    |    33|
+|10    |  m_DISP  |DISP    |    32|
+|11    |  m_DIV   |DIV     |   112|
+|12    |  m_EXMEM |EX_MEM  | 11439|
+|13    |  m_EXT   |EXT     |    17|
+|14    |  m_HALT  |HALT    |     2|
+|15    |  m_IDEX  |ID_EX   |  2324|
+|16    |  m_IFID  |IF_ID   |   122|
+|17    |  m_JBUB  |JBUB    |     1|
+|18    |  m_MEMWB |MEM_WB  |   155|
+|19    |  m_MUX   |MUX     |    16|
+|20    |  m_NPC   |NPC     |    40|
+|21    |  m_PC    |PC      |   262|
+|22    |  m_REGF  |REGF    |    12|
+|23    |  m_SHOW  |SHOW    |   118|
+|24    |  m_TYPEC |TYPEC   |    51|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:04 ; elapsed = 00:03:10 . Memory (MB): peak = 991.027 ; gain = 819.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 56 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:44 ; elapsed = 00:02:58 . Memory (MB): peak = 991.027 ; gain = 376.461
+Synthesis Optimization Complete : Time (s): cpu = 00:02:04 ; elapsed = 00:03:10 . Memory (MB): peak = 991.027 ; gain = 819.020
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 878 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 173 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 137 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 56 instances
+  LD => LDCE: 68 instances
+  LDC => LDCE: 1 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 61 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:16 ; elapsed = 00:03:22 . Memory (MB): peak = 991.027 ; gain = 781.516
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 991.027 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.858 . Memory (MB): peak = 991.027 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 07 15:01:20 2018...

@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../../i9/DEC.v"
+verilog xil_defaultlib  "../../../../../i9/MUX.v"
+verilog xil_defaultlib  "../../../../../i9/CONT.v"
+verilog xil_defaultlib  "../../../../../i9/PC.v"
+verilog xil_defaultlib  "../../../../../i9/LOAD.v"
+verilog xil_defaultlib  "../../../../../i9/DIV.v"
+verilog xil_defaultlib  "../../../../../i9/IF_ID.v"
+verilog xil_defaultlib  "../../../../../i9/DISP.v"
+verilog xil_defaultlib  "../../../../../i9/EX_MEM.v"
+verilog xil_defaultlib  "../../../../../i9/HALT.v"
+verilog xil_defaultlib  "../../../../../i9/JBUB.v"
+verilog xil_defaultlib  "../../../../../i9/CACU.v"
+verilog xil_defaultlib  "../../../../../i9/ID_EX.v"
+verilog xil_defaultlib  "../../../../../i9/MEM_WB.v"
+verilog xil_defaultlib  "../../../../../i9/DS.v"
+verilog xil_defaultlib  "../../../../../i9/ALU.v"
+verilog xil_defaultlib  "../../../../../i9/FORW.v"
+verilog xil_defaultlib  "../../../../../i9/TYPEC.v"
+verilog xil_defaultlib  "../../../../../i9/REGF.v"
+verilog xil_defaultlib  "../../../../../i9/SHOW.v"
+verilog xil_defaultlib  "../../../../../i9/IS.v"
+verilog xil_defaultlib  "../../../../../i9/NPC.v"
+verilog xil_defaultlib  "../../../../../i9/EXT.v"
+verilog xil_defaultlib  "../../../../../i9/LED.v"
+verilog xil_defaultlib  "../../../../../i9/i9_7980XE.v"
+verilog xil_defaultlib  "../../../../../i9/i9_test.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

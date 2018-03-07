@@ -1,0 +1,7 @@
+Running: xsim.dir/i9_test_behav/xsimk.exe -simmode gui -wdb i9_test_behav.wdb -simrunnum 0 -socket 62943
+Design successfully loaded
+Design Loading Memory Usage: 23068 KB (Peak: 23068 KB)
+Design Loading CPU Usage: 171 ms
+Simulation completed
+Simulation Memory Usage: 25512 KB (Peak: 25512 KB)
+Simulation CPU Usage: 1124 ms

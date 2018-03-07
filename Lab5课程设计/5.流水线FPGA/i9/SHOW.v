@@ -9,7 +9,7 @@ module SHOW(clk,data_to_show,SEG,AN);
     reg [2:0]pos;
     reg clk_down = 0;
     reg [31:0] cnt = 0;
-    parameter times = 2;//分时为25hz,40000
+    parameter times = 40000;//分时为25hz,40000
     initial begin
         pos=0;
         SEG=8'b00000000;

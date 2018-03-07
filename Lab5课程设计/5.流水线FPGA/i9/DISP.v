@@ -14,13 +14,16 @@ module DISP(clk,rst,syscall,RF_A,RF_B,syscallout);
 
     always @(posedge clk)
     begin
-    	out2<=out1;
+        if (rst) begin
+                out2 <= 0;
+            end
+        else
+    	   out2<=out1;
     end
     
     always @(*) begin
         if (rst) begin
             out1 <= 0;
-            out2 <= 0;
             syscallout<=0;
         end
 		else if((!(RF_A==32'ha))&&syscall) begin

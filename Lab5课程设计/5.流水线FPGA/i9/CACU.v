@@ -12,13 +12,13 @@ module CACU(rst,clk,halt,total,conditional,unconditional,
     input beq;
     input correct_b;
     input loaduse;
-    output LOCK;
+    output reg LOCK;
     output reg [31:0]total;
     output reg [31:0]conditional;
     output reg [31:0]unconditional;
     output reg [31:0]conditional_success;
     output reg [31:0]lu_times;
-    reg flag;
+    reg flag,out1,out2;
     initial begin
         total=0;
         conditional_success=0;
@@ -26,10 +26,33 @@ module CACU(rst,clk,halt,total,conditional,unconditional,
         unconditional=0;
         lu_times=0;
         flag=0;
+        LOCK=0;
     end
 
-    assign LOCK = halt;
-
+    always @(posedge clk)
+        begin
+            if (rst) begin
+                    out2 <= 0;
+                end
+            else
+               out2<=out1;
+        end
+        
+        always @(*) begin
+            if (rst) begin
+                out1 <= 0;
+                LOCK<=0;
+            end
+            else if(halt) begin
+                out1 <= 1;
+                LOCK<=1;
+            end
+            else begin
+                out1<=out2;
+                LOCK<=out2;
+            end
+        end
+        
     always @(negedge clk)begin
         if(rst)begin 
             total=0;
@@ -45,7 +68,7 @@ module CACU(rst,clk,halt,total,conditional,unconditional,
                 flag=0;
             end
             else if(halt&&(flag == 0))begin
-                total=total+1; 
+                total=total+2;
                 flag=1;
             end
             if(j|jal|jr)unconditional=unconditional+1;
