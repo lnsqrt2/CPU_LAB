@@ -1,5 +1,6 @@
 #v2.0 raw
 .text
+addi $sp,$0,0x2ffc #设置SP指针 
 addi $a0,$0,0
 loop_add:
   add    $a0,$a0,1       
@@ -8,10 +9,18 @@ loop_add:
 j loop_add
 ###################################################################
 #break1
+#保护现场
 
-addi $ra,$a0,0#保护现场
+addi $sp, $sp, -4 #入栈
+sw $s1, 0($sp)
+addi $sp, $sp, -4 #入栈
+sw $a0, 0($sp)
+addi $sp, $sp, -4 #入栈
+sw $v0, 0($sp)
+addi $sp, $sp, -4 #EPC入栈
+sw $30, 0($sp)	#实际上不是30号寄存器，当检测到sw且$30时，替换为EPC入栈
+
 mfc0 $0,$0#开中断
-
 
 addi $s1,$zero,1     #算术右移测试 
 
@@ -69,14 +78,37 @@ add    $a0,$0,$s1       #display $s1
 addi   $v0,$0,34         # display hex
 
 mtc0 $0,$0#关中断
-addi $a0,$ra,0#恢复现场
+
+
+#恢复现场
+lw $30, 0($sp) #EPC出栈
+addi $sp, $sp, 4 #实际上不是30号寄存器，当检测到lw且$30时，替换为EPC入栈
+lw $v0, 0($sp) #出栈
+addi $sp, $sp, 4
+lw $a0, 0($sp) #出栈
+addi $sp, $sp, 4 
+lw $s1, 0($sp) #出栈
+addi $sp, $sp, 4 
+
+
 mfc0 $0,$0#开中断中断返回
 eret#中断返回
 
 ###################################################################
 #break2
 
-addi $ra,$a0,0#保护现场
+#保护现场
+
+addi $sp, $sp, -4 #入栈
+sw $s1, 0($sp)
+addi $sp, $sp, -4 #入栈
+sw $a0, 0($sp)
+addi $sp, $sp, -4 #入栈
+sw $v0, 0($sp)
+addi $sp, $sp, -4 #EPC入栈
+sw $30, 0($sp)	#实际上不是30号寄存器，当检测到sw且$30时，替换为EPC入栈
+
+
 mfc0 $0,$0#开中断
 
 addi $s1,$zero,2     #算术右移测试 
@@ -134,14 +166,35 @@ add    $a0,$0,$s1       #display $s1
 addi   $v0,$0,34         # display hex
 
 mtc0 $0,$0#关中断
-addi $a0,$ra,0#恢复现场
+
+#恢复现场
+lw $30, 0($sp) #EPC出栈
+addi $sp, $sp, 4 #实际上不是30号寄存器，当检测到lw且$30时，替换为EPC入栈
+lw $v0, 0($sp) #出栈
+addi $sp, $sp, 4
+lw $a0, 0($sp) #出栈
+addi $sp, $sp, 4 
+lw $s1, 0($sp) #出栈
+addi $sp, $sp, 4 
+
+
 mfc0 $0,$0#开中断中断返回
 eret#中断返回
 
 ###################################################################
 #break3
 
-addi $ra,$a0,0#保护现场
+#保护现场
+
+addi $sp, $sp, -4 #入栈
+sw $s1, 0($sp)
+addi $sp, $sp, -4 #入栈
+sw $a0, 0($sp)
+addi $sp, $sp, -4 #入栈
+sw $v0, 0($sp)
+addi $sp, $sp, -4 #EPC入栈
+sw $30, 0($sp)	#实际上不是30号寄存器，当检测到sw且$30时，替换为EPC入栈
+
 mfc0 $0,$0#开中断
 
 addi $s1,$zero,3     #算术右移测试 
@@ -199,6 +252,17 @@ add    $a0,$0,$s1       #display $s1
 addi   $v0,$0,34         # display hex
 
 mtc0 $0,$0#关中断
-addi $a0,$ra,0#恢复现场
+
+#恢复现场
+
+lw $30, 0($sp) #EPC出栈
+addi $sp, $sp, 4 #实际上不是30号寄存器，当检测到lw且$30时，替换为EPC入栈
+lw $v0, 0($sp) #出栈
+addi $sp, $sp, 4
+lw $a0, 0($sp) #出栈
+addi $sp, $sp, 4 
+lw $s1, 0($sp) #出栈
+addi $sp, $sp, 4 
+
 mfc0 $0,$0#开中断中断返回
 eret#中断返回
