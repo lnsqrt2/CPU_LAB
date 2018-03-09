@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Wed Mar 07 15:05:40 2018
+| Date         : Fri Mar 09 16:09:28 2018
 | Host         : 803-073 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file i9_7980XE_timing_summary_routed.rpt -rpx i9_7980XE_timing_summary_routed.rpx
 | Design       : i9_7980XE
@@ -52,11 +52,11 @@ Table of Contents
 --------------------
  There are 66 register/latch pins with no clock driven by root clock pin: clk_in (HIGH)
 
- There are 17 register/latch pins with no clock driven by root clock pin: m_CONT/EXTOP_reg[0]/G (HIGH)
+ There are 9 register/latch pins with no clock driven by root clock pin: m_CONT/EXTOP_reg[0]/G (HIGH)
 
- There are 17 register/latch pins with no clock driven by root clock pin: m_CONT/EXTOP_reg[1]/G (HIGH)
+ There are 9 register/latch pins with no clock driven by root clock pin: m_CONT/EXTOP_reg[1]/G (HIGH)
 
- There are 33701 register/latch pins with no clock driven by root clock pin: m_DIV/clk_out_reg/C (HIGH)
+ There are 33667 register/latch pins with no clock driven by root clock pin: m_DIV/clk_out_reg/C (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: m_EXMEM/RW_out_reg[0]/C (HIGH)
 
@@ -277,8 +277,6 @@ Table of Contents
  There is 1 register/latch pin with no clock driven by root clock pin: m_IDEX/RA_out_reg[1]/C (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: m_IDEX/RA_out_reg[2]/C (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: m_IDEX/RA_out_reg[3]/C (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: m_IDEX/RA_out_reg[4]/C (HIGH)
 
@@ -537,7 +535,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 101558 pins that are not constrained for maximum delay. (HIGH)
+ There are 101448 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

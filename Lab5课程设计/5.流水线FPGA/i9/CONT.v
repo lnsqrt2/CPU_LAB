@@ -6,9 +6,9 @@ module CONT(op,func,Syscall,ALUOP,jr,jal,j,bne,beq,blez,EXTOP,Memwrite,MemToReg,
     output reg  Syscall;
     output reg [3:0]ALUOP;//ALU模式控制
     output reg jr,jal,j,bne,beq,blez,sh;//特殊跳转指令信号
-    output reg [1:0]EXTOP;//立即数扩展控制
+    output reg [1:0]EXTOP;//立即数扩展控�?
     output reg Memwrite,MemToReg,Regwrite,ALUsrc,RegDst;
-    //添加指令及信号，请区分指令类型进行添加
+    //添加指令及信号，请区分指令类型进行添�?
     always @(*)
     begin
         if(op == 6'b000000) begin//13 special instructions
@@ -234,10 +234,27 @@ module CONT(op,func,Syscall,ALUOP,jr,jal,j,bne,beq,blez,EXTOP,Memwrite,MemToReg,
                     sh <= 0;
                     blez <= 0;
                 end
+                6'b100110:begin//XOR
+                    RegDst <= 1;
+                    Regwrite <= 1;
+                    Syscall <= 0;
+                    jal <=0;
+                    j<=0;
+                    bne<=0;
+                    beq <=0;
+                    Memwrite <=0;
+                    MemToReg<=0;
+                    ALUsrc <=0;
+                    jr <= 0;
+                    EXTOP <= 2'b00;
+                    ALUOP <= 4'b1001;
+                    sh <= 0;
+                    blez <= 0;
+                end
             endcase
         end
         else begin
-            case(op)//11条普通指令
+            case(op)//11条普通指�?
                 6'b001000:begin//addi
                     Regwrite <= 1;
                     ALUsrc <= 1;
@@ -459,6 +476,23 @@ module CONT(op,func,Syscall,ALUOP,jr,jal,j,bne,beq,blez,EXTOP,Memwrite,MemToReg,
                     RegDst <= 0;
                     EXTOP <= 2'b00;
                     ALUOP <= 4'b1011;
+                    sh <= 0;
+                    blez <= 0;
+                end
+                6'b001011:begin//sltiU
+                    ALUsrc <= 1;
+                    Regwrite <= 1;
+                    Syscall <= 0;
+                    jr <= 0;
+                    jal <=0;
+                    j <= 0;
+                    bne <= 0;
+                    beq <= 0;
+                    Memwrite <=0;
+                    MemToReg <= 0;
+                    RegDst <= 0;
+                    EXTOP <= 2'b00;
+                    ALUOP <= 4'b1100;
                     sh <= 0;
                     blez <= 0;
                 end

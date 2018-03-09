@@ -15,7 +15,7 @@ initial
 
 always @(posedge clk_in) begin
 			if(choose) begin
-				if (cnt>=5)//actually 2500000 times
+				if (cnt>=100)//actually 2500000 times
 					begin
 						clk_out <= ~clk_out;
 						cnt <= 0;
