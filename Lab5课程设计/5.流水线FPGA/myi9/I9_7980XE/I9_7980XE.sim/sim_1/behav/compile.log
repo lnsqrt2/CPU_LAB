@@ -1,55 +1,55 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/DEC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/DEC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DEC
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/MUX.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MUX
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/CONT.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/CONT.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CONT
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/PC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module PC
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/LOAD.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/LOAD.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module LOAD
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/DIV.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DIV
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/IF_ID.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IF_ID
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/DISP.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/DISP.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DISP
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/EX_MEM.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module EX_MEM
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/HALT.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/HALT.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module HALT
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/JBUB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/JBUB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module JBUB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/CACU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/CACU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CACU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/ID_EX.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ID_EX
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/MEM_WB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MEM_WB
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/DS.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/DS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DS
 INFO: [VRFC 10-311] analyzing module DS_8b
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/FORW.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/FORW.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FORW
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/TYPEC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/TYPEC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TYPEC
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/REGF.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/REGF.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module REGF
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/SHOW.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/SHOW.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SHOW
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/IS.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/IS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module IS
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/NPC.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module NPC
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/EXT.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module EXT
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/LED.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/LED.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module LED
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/i9_7980XE.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/i9_7980XE.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module i9_7980XE
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/i9/i9_test.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/i9_test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module i9_test
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Desktop/myi9/I9_7980XE/I9_7980XE.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/myi9/I9_7980XE/I9_7980XE.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

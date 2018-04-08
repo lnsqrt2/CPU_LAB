@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="5" Path="C:/Users/Administrator/Desktop/myi9/I9_7980XE/I9_7980XE.xpr">
+<Project Version="7" Minor="5" Path="C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/myi9/I9_7980XE/I9_7980XE.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="2d615c4ac0a8487181ba49b672f289d3"/>

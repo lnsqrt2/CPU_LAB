@@ -23,7 +23,6 @@ read_verilog -library xil_defaultlib {
   C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/ALU.v
   C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/divider.v
   C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/operating_parameter.v
-  C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/ds.v
   C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/led.v
   C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/pc.v
   C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/display.v

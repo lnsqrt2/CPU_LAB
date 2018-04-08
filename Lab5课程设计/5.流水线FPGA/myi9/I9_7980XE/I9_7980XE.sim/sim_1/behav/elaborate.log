@@ -5,22 +5,22 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/CONT.v" Line 3. Module CONT has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/EXT.v" Line 3. Module EXT has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/ALU.v" Line 2. Module ALU has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/MUX.v" Line 3. Module MUX has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/LED.v" Line 2. Module LED has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/TYPEC.v" Line 2. Module TYPEC has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/SHOW.v" Line 3. Module SHOW has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/myi9/I9_7980XE/I9_7980XE.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/CONT.v" Line 3. Module CONT has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/EXT.v" Line 3. Module EXT has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/ALU.v" Line 2. Module ALU has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/MUX.v" Line 3. Module MUX has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/LED.v" Line 2. Module LED has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/TYPEC.v" Line 2. Module TYPEC has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/i9/SHOW.v" Line 3. Module SHOW has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Desktop/myi9/I9_7980XE/I9_7980XE.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/CONT.v" Line 3. Module CONT has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/EXT.v" Line 3. Module EXT has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/ALU.v" Line 2. Module ALU has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/MUX.v" Line 3. Module MUX has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/LED.v" Line 2. Module LED has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/TYPEC.v" Line 2. Module TYPEC has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/SHOW.v" Line 3. Module SHOW has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/myi9/I9_7980XE/I9_7980XE.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/CONT.v" Line 3. Module CONT has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/EXT.v" Line 3. Module EXT has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/ALU.v" Line 2. Module ALU has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/MUX.v" Line 3. Module MUX has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/LED.v" Line 2. Module LED has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/TYPEC.v" Line 2. Module TYPEC has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/i9/SHOW.v" Line 3. Module SHOW has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/5.流水线FPGA/myi9/I9_7980XE/I9_7980XE.sim/sim_1/behav/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.DIV

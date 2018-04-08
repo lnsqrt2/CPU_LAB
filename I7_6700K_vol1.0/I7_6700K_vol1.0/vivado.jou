@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Apr 08 20:37:01 2018
+# Process ID: 1288
+# Log file: C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0/vivado.log
+# Journal file: C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0/I7_6700K_vol1.0.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+remove_files C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/divider.v
+remove_files C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/extender.v
+remove_files C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/cpu_choose.v

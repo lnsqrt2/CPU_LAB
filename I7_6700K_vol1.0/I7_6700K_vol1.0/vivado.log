@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Apr 08 20:37:01 2018
+# Process ID: 1288
+# Log file: C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0/vivado.log
+# Journal file: C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0/I7_6700K_vol1.0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 802.613 ; gain = 190.375
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/ALU.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/ALU.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/change_type.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/change_type.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/controller.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/controller.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/cpu_choose.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/cpu_choose.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/display.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/display.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/divider.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/divider.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/ds.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/ds.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/extender.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/extender.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/i7_6700k.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/i7_6700k.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/is.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/is.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/led.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/led.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/operating_parameter.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/operating_parameter.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/pc.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/pc.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/regfile.v" into library work [C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/regfile.v:1]
+[Sun Apr 08 20:37:28 2018] Launched synth_1...
+Run output will be captured here: C:/Users/lnsqr/Documents/GitHub/CPU_LAB/I7_6700K_vol1.0/I7_6700K_vol1.0/I7_6700K_vol1.0.runs/synth_1/runme.log
+remove_files C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/divider.v
+remove_files C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/extender.v
+remove_files C:/Users/lnsqr/Documents/GitHub/CPU_LAB/Lab5课程设计/1.单周期FPGA/cpu_choose.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 08 20:40:34 2018...
